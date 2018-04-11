@@ -3,9 +3,33 @@ using UnityEditor;
 
 public enum FighterHits
 {
+    DownPunch,
+    DownHardPunch,
+    DownKick,
+    DownHardKick,
 
-    Lmkick,
-    Lpunch,
+    ForwardLightPunch,
+    ForwardMediumPunch,
+    ForwardHardPunch,
+    ForwardLightKick,
+    ForwardMediumKick,  
+    ForwardHardkick,
+    //(jab)
+    LightPunch,
+    //(Strong)     
+    MediumPunch,
+    //(Fierce)     
+    HardPunch,
+    //(Short)      
+    LightKick,
+    //(Forward)    
+    MediumKick,
+    //(Hard)       
+    HardKick,
+
+
+
+
 
 }
 
@@ -26,8 +50,29 @@ public enum FighterStates
     _None,
     Blocking,
     Idle,
-    Lmkick,
-    Lpunch,
+    DownPunch,
+    DownHardPunch,
+    DownKick,
+    DownHardKick,
+
+    ForwardLightPunch,
+    ForwardMediumPunch,
+    ForwardHardPunch,
+    ForwardLightKick,
+    ForwardMediumKick,
+    ForwardHardkick,
+    //(jab)
+    LightPunch,
+    //(Strong)     
+    MediumPunch,
+    //(Fierce)     
+    HardPunch,
+    //(Short)      
+    LightKick,
+    //(Forward)    
+    MediumKick,
+    //(Hard)       
+    HardKick,
     Walking,
 }
 

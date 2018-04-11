@@ -7,7 +7,7 @@ public class FighterController : MonoBehaviour
 {
 
     [SerializeField]
-    private HitInformationCollection hitInformationCollection;
+    private HitInformationCollection hitInformationCollection ;
 
     private Hit currentHit = new Hit();
 
@@ -19,11 +19,6 @@ public class FighterController : MonoBehaviour
     private FighterStates fighterstate;    // Use this for initialization
 
     private FighterStates lastfighterstate;
-
-
-
-
-
 
 
 
@@ -55,8 +50,7 @@ public class FighterController : MonoBehaviour
 
     void Start()
     {
-        if (hitInformationCollection == null)
-            hitInformationCollection = new HitInformationCollection();
+  
 
         animator = this.GetComponent<Animator>();
         fighterstate = FighterStates.Idle;
@@ -146,7 +140,7 @@ public class FighterController : MonoBehaviour
 
                     transformchecking = pubchGO;
 
-                    currentstate = FighterStates.Lpunch;
+                    currentstate = FighterStates.LightPunch;
                     currentHit = hitInformationCollection.GetHit(currentstate.GetFighterHit());
 
 
@@ -156,7 +150,7 @@ public class FighterController : MonoBehaviour
                 {
                     transformchecking = kickGO;
 
-                    currentstate = FighterStates.Lmkick;
+                    currentstate = FighterStates.MediumKick;
                     currentHit = hitInformationCollection.GetHit(currentstate.GetFighterHit());
 
                 }
@@ -178,7 +172,7 @@ public class FighterController : MonoBehaviour
 
 
                 break;
-            case FighterStates.Lpunch:
+            case FighterStates.LightPunch:
                 if (currentHit.HitStatus >= (int)HitsStates.Finished)
                 {
                     currentstate = FighterStates.Idle;
@@ -186,7 +180,7 @@ public class FighterController : MonoBehaviour
                 }
                 break;
 
-            case FighterStates.Lmkick:
+            case FighterStates.MediumKick:
                 if (currentHit.HitStatus >= (int)HitsStates.Finished)
                 {
                     currentstate = FighterStates.Idle;
@@ -239,7 +233,7 @@ public class FighterController : MonoBehaviour
                 {
                     transformchecking = pubchGO;
 
-                    currentstate = FighterStates.Lpunch;
+                    currentstate = FighterStates.LightPunch;
                     currentHit = hitInformationCollection.GetHit(currentstate.GetFighterHit());
 
 
@@ -248,7 +242,7 @@ public class FighterController : MonoBehaviour
                 {
                     transformchecking = kickGO;
 
-                    currentstate = FighterStates.Lmkick;
+                    currentstate = FighterStates.MediumKick;
                     currentHit = hitInformationCollection.GetHit(currentstate.GetFighterHit());
 
                 }
@@ -316,17 +310,18 @@ public class FighterController : MonoBehaviour
             currentHit.AddOneFrame();
     }
 
-    private void OnDrawGizmos()
+     void OnDrawGizmos()
     {
-        if (Application.isEditor && !Application.isPlaying){
-
-            var hits = hitInformationCollection.GetHits();
+      
+        var hits = hitInformationCollection.GetHits();
+        //if (Application.isEditor && !Application.isPlaying )
+       
+        
             var hit = hits[indexHitGizmo % hits.Length];
-            {
+           
                 hit._drawGizmoEdition();
                
-            }
-        }
+       
 
         if (currentHit != null)
         {

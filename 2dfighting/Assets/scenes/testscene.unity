@@ -802,31 +802,129 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitInformationCollection:
     hits:
-    - colorGizmo: {r: 0, g: 1, b: 1, a: 1}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
       indexFrameGizmo: 0
-      Enabled: 1
+      Enabled: 0
       fighterHitname: 0
-      hitTransformInformation:
-      - origin: {x: 0, y: 0, z: 0}
-        direction: {x: 0.28, y: 0.35, z: 0}
-        position: {x: 0, y: 0, z: 0}
-        rotation: {x: -0, y: 0, z: 0}
-        scale: {x: 1, y: 1, z: 1}
-      mainTransform: {fileID: 2026628040}
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
       bodyTransform: {fileID: 0}
-    - colorGizmo: {r: 1, g: 0.07352942, b: 0.07352942, a: 1}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 1
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 2
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 3
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 4
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 5
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 6
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 7
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 8
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 1
+      Enabled: 0
+      fighterHitname: 9
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 1, g: 0.007352948, b: 0.007352948, a: 0}
       indexFrameGizmo: 0
       Enabled: 1
-      fighterHitname: 1
+      fighterHitname: 10
       hitTransformInformation:
       - origin: {x: 0, y: 0.25, z: 0}
         direction: {x: 0.25, y: 0, z: 0}
         position: {x: 0, y: 0, z: 0}
-        rotation: {x: -0, y: 0, z: 0}
-        scale: {x: 1, y: 1, z: 1}
+        rotation: {x: 0, y: 0, z: 0}
+        scale: {x: 0, y: 0, z: 0}
       mainTransform: {fileID: 2026628040}
       bodyTransform: {fileID: 0}
-  indexHitGizmo: 0
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 11
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 12
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 13
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0.056660898, g: 0.21296686, b: 0.9632353, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 1
+      fighterHitname: 14
+      hitTransformInformation:
+      - origin: {x: 0, y: 0, z: 0}
+        direction: {x: 0.28, y: 0.35, z: 0}
+        position: {x: 0, y: 0, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        scale: {x: 0, y: 0, z: 0}
+      mainTransform: {fileID: 2026628040}
+      bodyTransform: {fileID: 0}
+    - colorGizmo: {r: 0, g: 0, b: 0, a: 0}
+      indexFrameGizmo: 0
+      Enabled: 0
+      fighterHitname: 15
+      hitTransformInformation: []
+      mainTransform: {fileID: 0}
+      bodyTransform: {fileID: 0}
+  indexHitGizmo: 10
   fighterstate: 2
   walkingvelocity: {x: 0.09, y: 0, z: 0}
   cooldowngap: 0.1

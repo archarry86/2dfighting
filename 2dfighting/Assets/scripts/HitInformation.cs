@@ -13,11 +13,11 @@ public class HitInformationCollection //: ScriptableObject
     {
         var names = Enum.GetNames(typeof(FighterHits));
         hits = new Hit[names.Length];
-
         for (int i = 0; i < hits.Length; i++)
         {
             Hit hit = new Hit();
-            hit.SetFighterHitname((FighterHits)(i));
+            
+            hit.FighterHitname = ((FighterHits)(i));
             hits[i] = hit;
         }
     }
@@ -65,11 +65,21 @@ public class Hit : IHit
     [SerializeField]
     private FighterHits fighterHitname;
 
-    public void SetFighterHitname(FighterHits value)
-    {
 
-        fighterHitname = value;
+
+    public FighterHits FighterHitname
+    {
+        set
+        {
+           // fighterHitname = value;
+        }
+        get
+        {
+            return fighterHitname;
+        }
     }
+
+    
 
     [SerializeField]
     private HitTransformInformation[] hitTransformInformation;
@@ -180,19 +190,25 @@ public class Hit : IHit
 
     public void _drawGizmoEdition()
     {
-      
-         //if (hitStatus >= (int)HitsStates.Enabled && hitStatus < (int)HitsStates.Finished)
-         var _hitTransformInformation = hitTransformInformation[indexFrameGizmo % hitTransformInformation.Length];
-       
+
+        if (!Enabled)
+            return;
+
         Gizmos.color = colorGizmo;
 
-        if(this.mainTransform != null)
+
+        var _hitTransformInformation = hitTransformInformation[0];
+       
+
+        if (this.mainTransform != null)
         Gizmos.DrawSphere(this.mainTransform.position, 0.05f);
 
-        Gizmos.DrawSphere(_hitTransformInformation.Origin, 0.05f);
 
+        Gizmos.DrawSphere(_hitTransformInformation.Origin, 0.05f);
+      
         Gizmos.DrawSphere(_hitTransformInformation.Origin+_hitTransformInformation.Direction, 0.05f);
 
+      
     }
 }
 
